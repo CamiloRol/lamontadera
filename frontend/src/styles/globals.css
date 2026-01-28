@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 60% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 25 95% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Theme Park Colors */
+    --sunset-orange: 25 95% 55%;
+    --sunset-pink: 340 80% 60%;
+    --sunset-purple: 270 60% 50%;
+    --night-blue: 230 60% 25%;
+    --golden: 45 100% 55%;
+    --sky-gradient: linear-gradient(135deg, hsl(25 95% 55%) 0%, hsl(340 80% 60%) 50%, hsl(270 60% 50%) 100%);
+    --hero-overlay: linear-gradient(180deg, hsla(230, 60%, 15%, 0.3) 0%, hsla(230, 60%, 15%, 0.8) 100%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 230 50% 8%;
+    --foreground: 30 30% 95%;
+
+    --card: 230 45% 12%;
+    --card-foreground: 30 30% 95%;
+
+    --popover: 230 45% 12%;
+    --popover-foreground: 30 30% 95%;
+
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 40% 35%;
+    --secondary-foreground: 30 30% 95%;
+
+    --muted: 230 40% 20%;
+    --muted-foreground: 30 20% 60%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 40% 20%;
+    --input: 230 40% 20%;
+    --ring: 25 95% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+@layer utilities {
+
+  .bg-gradient-sunset {
+    background-image: var(--sky-gradient);
+  }
+
+  .bg-hero-overlay {
+    background-image: var(--hero-overlay);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsla(25, 95%, 55%, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px hsla(25, 95%, 55%, 0.8);
+  }
+}
