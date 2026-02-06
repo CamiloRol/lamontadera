@@ -16,9 +16,9 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md"
     >
-      <div className="border border-border rounded-lg container mx-auto px-6 py-4">
+      <div className="border border-white/40 rounded-lg container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.a
@@ -27,8 +27,8 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-2xl font-display font-bold text-gradient">
-              🎢 AventuraPark
+            <span className="text-2xl font-display font-bold text-white">
+              🎢 LaMontadera
             </span>
           </motion.a>
 
@@ -38,11 +38,11 @@ const Navbar = () => {
               <motion.a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+                className="text-white/80 hover:text-white font-medium transition-colors relative group"
                 whileHover={{ y: -2 }}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full" />
               </motion.a>
             ))}
             <Button variant="default" className="bg-gradient-sunset hover:opacity-90 transition-opacity font-semibold shadow-lg">
@@ -52,7 +52,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground p-2"
+            className="md:hidden text-white p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -71,7 +71,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block text-foreground/80 hover:text-primary font-medium py-2"
+                className="block text-white/80 hover:text-white font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

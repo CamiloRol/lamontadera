@@ -20,7 +20,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-2xl font-display font-bold text-background"
           >
-            🎢 AventuraPark
+            🎢 LaMontadera
           </motion.div>
 
           {/* Social Links */}
@@ -41,7 +41,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-background/60 text-sm">
-            © 2025 AventuraPark. Todos los derechos reservados.
+            © 2025 LaMontadera. Todos los derechos reservados.
           </p>
         </div>
       </div>
