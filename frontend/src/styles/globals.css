@@ -34,7 +34,6 @@
 
     --radius: 0.75rem;
 
-    /* Custom Theme Park Colors */
     --sunset-orange: 25 95% 55%;
     --sunset-pink: 340 80% 60%;
     --sunset-purple: 270 60% 50%;
@@ -116,6 +115,21 @@
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .cta-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+  }
+
+  .cta-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px hsla(230, 30%, 15%, 0.16);
+    filter: saturate(1.05);
+  }
+
+  .cta-hover:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
   }
 }
 
