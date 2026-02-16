@@ -24,7 +24,7 @@ const Navbar = () => {
       { name: "Tirolesa", href: "/atracciones/tirolesa" },
       { name: "Carros RC", href: "/atracciones/carros-rc" },
       { name: "Tobogan Arcoiris", href: "/atracciones/tobogan-arcoiris" },
-      { name: "Trampolin ninos", href: "/atracciones/trampolin-ninos" },
+      { name: "Trampolin niños", href: "/atracciones/trampolin-ninos" },
     ],
     []
   );
